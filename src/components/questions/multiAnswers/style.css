@@ -1,0 +1,54 @@
+.question.single-answer .answers > div {
+ margin: 10px 0;
+ font-size: 20px;
+}
+
+.question.single-answer .answers input {
+ margin-right: 10px;
+}
+
+.question.single-answer .check {
+ width:100%;
+ display: flex;
+ justify-content: flex-end;
+ align-items: center;
+ margin: 20px 0;
+}
+
+.question.single-answer .check .button {
+ background-color: #6e7c97;
+ padding: 0.5em 1em;
+ border-radius: 20px;
+ text-transform: uppercase;
+
+ cursor: pointer;
+ position: relative;
+ overflow: hidden;
+ transition: 0.25s;
+}
+.question.single-answer .check .button .wrong,
+.question.single-answer .check .button .correct {
+ width: 100%;
+ height: 100%;
+ position: absolute;
+ top: -100%;
+ left: 0;
+ transition: 0.25s;
+ text-transform: uppercase;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.question.single-answer .check .button .correct {
+ background-color: green;
+}
+
+.question.single-answer .check .button .wrong {
+ background-color: red;
+}
+
+.question.single-answer .check .button .correct.selected,
+.question.single-answer .check .button .wrong.selected {
+ top: 0;
+}

@@ -1,0 +1,22 @@
+.questions {
+ width: 100%;
+ max-width: 800px;
+ min-width: 600px;
+ margin: auto;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ color: whitesmoke;
+}
+.question {
+ box-sizing: border-box;
+ padding: 20px;
+ border: 2px solid whitesmoke;
+ border-radius: 20px;
+ margin: 20px 0;
+}
+.question>h1 {
+ width:100%;
+ text-align:  center;
+
+}
